@@ -1,52 +1,27 @@
 /* Barra general */
-.navbar{
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
+.navbar {
+  background: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
 }
 /* Logo con el nombre e icono */
-.navbar-logo{
-    color: white;
-    justify-self: start;
-    margin-left: 20px;
-    cursor: pointer;
+.navbar-logo {
+  color: black;
+  justify-self: start;
+  margin-left: 10vh;
+  cursor: pointer;
 }
-.fa-react{
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
+.menu-icon {
+  color: black;
+  margin-right: 10vh;
+  cursor: pointer;
 }
-/* Enlaces a otras pestañas */
-.nav-links{
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+.menu-icon i {
+  padding: 1vh 2vh;
 }
-.nav-links:hover{
-    background-color: #6d76f7;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
-}
-/* En caso de ser movil */
-.nav-links-mobile{
-    display: none;
-}
-/* ul donde estan los enlaces */
-.nav-menu{
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-gap: 10px;
-    list-style: none;
-    width: 70vh;
-    justify-content: end;
-    margin-right: 2rem;
-}
-/* desplegable de tipo hamburguesa */
-.fa-bars{
-    color: white;
-}
-.menu-icon{
-    display: none;
+.fas.fa-moon {
+  color: #fff;
 }

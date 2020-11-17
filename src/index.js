@@ -1,9 +1,11 @@
-import React, {Component} from "react";
-import {BrowserRouter} from 'react-router-dom'
+import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./indexP3.css";
 
-import Nav from './componentes/navbar/navbar.js'
+import Nav from "./componentes/navbar.js";
+import Search from "./componentes/searchbar.js";
+import Content from './componentes/content.js'
 
 class App extends React.Component {
   render() {
@@ -13,6 +15,11 @@ class App extends React.Component {
           <div>
             <Nav />
           </div>
+          <br />
+          <div className="container" >
+            <Search />
+            <Content />
+          </div>
         </BrowserRouter>
       </div>
     );
@@ -21,7 +28,4 @@ class App extends React.Component {
 
 // ========================================
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
