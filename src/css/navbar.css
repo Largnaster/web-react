@@ -1,6 +1,5 @@
 /* Barra general */
 .navbar {
-  background: #fff;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -9,13 +8,11 @@
 }
 /* Logo con el nombre e icono */
 .navbar-logo {
-  color: black;
   justify-self: start;
   margin-left: 10vh;
   cursor: pointer;
 }
 .menu-icon {
-  color: black;
   margin-right: 10vh;
   cursor: pointer;
 }
@@ -23,5 +20,5 @@
   padding: 1vh 2vh;
 }
 .fas.fa-moon {
-  color: #fff;
+  color: #FAFAFA;
 }

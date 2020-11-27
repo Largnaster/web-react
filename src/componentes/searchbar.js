@@ -5,7 +5,7 @@ import "../css/searchbar.css";
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: "Filter by Region", clicked: false };
+    this.state = { value: "Filter by Region", clicked: false, search: '' };
 
     this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -27,7 +27,7 @@ class Search extends React.Component {
           <input
             className="search"
             key="item1"
-            value=""
+            value={this.state.search}
             placeholder="search image"
           />
         </div>

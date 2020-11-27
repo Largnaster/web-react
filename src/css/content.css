@@ -1,11 +1,63 @@
+/* gneral, contiene lo que se va a mostrar */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+/* Estilo para el error */
+.error {
+    font-size: large;
+    color: red;
+}
+/* Contenido */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 40vh;
+    margin-top: 2vh;
+    border-radius: 5px;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .card-container {
-    padding: 2px 16px;
+    padding: 0.5em 16px;
 }
+.card-container h4 {
+    padding-bottom: 0.3em;
+}
+.card-container-text {
+    padding-top: 1vh;
+}
+/* Imagenes dentro de las cards */
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+/* Boton en las card */
+.card button {
+    border-width: 1px 0 0 0;
+    border-radius: 0 0 5px 5px;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: large;
+}
+/* Para esconder el texto */
+.read-more {
+    color: blueviolet;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/* Estilos para manejar la carga del API */
+.loading {
+    display: none;
+}
+.loading-text {
+    font-size: large;
+}
+/* Estilo para el modal */

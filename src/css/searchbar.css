@@ -9,13 +9,14 @@
   position: absolute;
 }
 .input-icon {
-  margin-bottom: 2em;
+  margin: 1em 0;
   grid-column: auto;
   width: 100%;
 }
 .icon {
   padding: 1rem;
   min-width: 40px;
+  color: black;
 }
 .search {
   padding: 1em;
